@@ -23,6 +23,19 @@ public class Main {
         node.printPostOrder();
         System.out.println(" ");
         node.printInLevel();
-        
+        System.out.println(" ");
+        node.remove(10);
+        node.remove(20);
+        node.remove(30);
+        node.remove(40);
+        node.remove(50);
+        node.printPreOrder();
+        System.out.println("");
+        node.printInOrder();
+        System.out.println(" ");
+        node.printPostOrder();
+        System.out.println(" ");
+        node.printInLevel();
+        System.out.println(" ");
     }
 }

@@ -30,6 +30,26 @@ public class Node {
         }
     }
 
+    public void remove(int value){
+        if (value < data) {
+            if (left != null) {
+                if (left.data == value) {
+                    left = null;
+                } else {
+                    left.remove(value);
+                }
+            }
+        } else if (value > data) {
+            if (right != null) {
+                if (right.data == value) {
+                    right = null;
+                } else {
+                    right.remove(value);
+                }
+            }
+        }
+    }
+
     public void printInOrder() {
         if (left != null) {
             left.printInOrder();
