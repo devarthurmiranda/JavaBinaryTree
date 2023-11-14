@@ -1,10 +1,8 @@
-/**
- * Main
- */
+package PrintingOrders;
 import Tree.Node;
-
 import java.util.Random;
-public class Main {
+
+public class Printing {
 
     public static void main(String[] args) {
         Random rand = new Random();
